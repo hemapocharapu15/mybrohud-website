@@ -1,71 +1,166 @@
-
-<!-- ================= SERVICES (services.html) ================= -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | MyBroHud</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 <style>
-body{background:#0b0f19;color:white;font-family:Inter}
-.section{padding:60px 30px}
-.img{width:100%;max-width:500px;margin:20px auto;border-radius:12px}
-.highlight{color:#6366f1}
-.card{background:#111827;padding:25px;border-radius:12px;margin:30px 0;opacity:0;transform:translateY(40px);transition:0.8s}
-.card.show{opacity:1;transform:translateY(0)}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0b0f19;
+  color:white;
+  padding:40px;
+}
+
+.section{
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.highlight{
+  color:#6366f1;
+  font-weight:600;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.card{
+  background:#111827;
+  padding:25px;
+  border-radius:16px;
+  transition:0.4s;
+  opacity:0;
+  transform:translateY(30px);
+}
+
+.card.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 20px rgba(99,102,241,0.3);
+}
+
+img{
+  width:100%;
+  border-radius:12px;
+  margin-top:10px;
+}
+
+p{
+  margin-top:10px;
+  font-size:16px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:40px;
+  padding:12px 25px;
+  background:#6366f1;
+  color:white;
+  border-radius:8px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#4f46e5;
+}
 </style>
 </head>
+
 <body>
+
 <div class="section">
-<h1>Our Services</h1>
-<p>We provide <span class="highlight">end-to-end marketing solutions</span> to help you attract, convert, and scale your business.</p>
+
+<h1 class="animate__animated animate__fadeInDown">Our Services</h1>
+
+<p>
+We provide <span class="highlight">end-to-end marketing solutions</span> to help you attract, convert, and scale your business.
+</p>
+
+<div class="cards">
 
 <div class="card">
-<h2>Social Media Ads</h2>
-<p>Our social media advertising focuses on creating highly targeted campaigns that reach the right audience at the right time. We analyze user behavior, interests, and trends to design ads that not only grab attention but also convert viewers into customers, ensuring consistent lead generation and brand visibility.</p>
-<img class="img" src="https://images.unsplash.com/photo-1557838923-2985c318be48">
+<h3>Social Media Ads</h3>
+<p>Facebook, Instagram & TikTok ads to generate leads and sales.</p>
+<img src="https://images.unsplash.com/photo-1557838923-2985c318be48">
 </div>
 
 <div class="card">
-<h2>SEO & Content Marketing</h2>
-<p>We build strong SEO foundations combined with high-quality content to improve your website’s visibility on search engines. By optimizing keywords, structure, and content strategy, we help you attract organic traffic that is more likely to convert into long-term customers.</p>
-<img class="img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+<h3>SEO & Content</h3>
+<p>Rank higher on Google and drive organic traffic.</p>
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
 </div>
 
 <div class="card">
-<h2>Google Ads</h2>
-<p>Our Google Ads strategy is focused on capturing high-intent users who are actively searching for your services. We continuously optimize campaigns, keywords, and bidding strategies to maximize ROI and ensure every dollar spent contributes to measurable business growth.</p>
-<img class="img" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+<h3>Google Ads</h3>
+<p>Maximize ROI with high-converting campaigns.</p>
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
 </div>
 
 <div class="card">
-<h2>Email Marketing</h2>
-<p>We design personalized email campaigns and automated funnels that nurture leads and build long-term relationships. From welcome sequences to re-engagement campaigns, our approach ensures better customer retention and increased lifetime value.</p>
-<img class="img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<h3>Email Marketing</h3>
+<p>Turn leads into loyal customers.</p>
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
 </div>
 
 <div class="card">
-<h2>Video Ads</h2>
-<p>Video content is one of the most powerful tools for engagement. We create compelling video ads that tell your brand story, capture attention within seconds, and drive higher conversions across social and digital platforms.</p>
-<img class="img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<h3>Video Ads</h3>
+<p>Engaging videos that boost conversions.</p>
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
 </div>
 
 <div class="card">
-<h2>Brand Strategy</h2>
-<p>We help you build a strong and memorable brand by defining your positioning, messaging, and identity. Our strategies ensure your business stands out in a competitive market while creating a consistent and impactful presence across all channels.</p>
-<img class="img" src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d">
+<h3>Brand Strategy</h3>
+<p>Build a strong and memorable brand identity.</p>
+<img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d">
+</div>
+
+</div>
+
+<div style="text-align:center;">
+<a href="index.html" class="btn">← Back to Home</a>
+</div>
+
 </div>
 
 <script>
-const cards=document.querySelectorAll('.card');
-window.addEventListener('scroll',()=>{
- cards.forEach(card=>{
-  const top=card.getBoundingClientRect().top;
-  if(top<window.innerHeight-100){card.classList.add('show')}
- })
-})
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      card.classList.add('show');
+    }
+  });
+});
 </script>
 
-<a href="index.html">Back</a>
-</div>
 </body>
 </html>

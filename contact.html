@@ -1,40 +1,116 @@
-
-<!-- ================= CONTACT (contact.html) ================= -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | MyBroHud</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 <style>
-body{background:#0b0f19;color:white;font-family:Inter}
-.section{padding:60px 30px;text-align:center}
-.card{background:#111827;padding:30px;border-radius:16px;max-width:500px;margin:auto;box-shadow:0 0 20px rgba(99,102,241,0.3)}
-.highlight{color:#6366f1;font-size:24px;font-weight:700;letter-spacing:0.5px}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0b0f19;
+  color:white;
+}
+
+.section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+h1{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.card{
+  background:linear-gradient(145deg,#111827,#1f2937);
+  padding:40px;
+  border-radius:20px;
+  max-width:500px;
+  margin:auto;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.highlight{
+  color:#6366f1;
+  font-size:22px;
+  font-weight:700;
+  margin-top:25px;
+}
+
+p{
+  margin-top:10px;
+  font-size:16px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:12px 25px;
+  background:#6366f1;
+  color:white;
+  border-radius:8px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#4f46e5;
+}
 </style>
+
 </head>
+
 <body>
+
 <div class="section">
-<h1>Contact Us</h1>
+
+<h1 class="animate__animated animate__fadeInDown">Contact Us</h1>
 
 <div class="card">
+
 <p class="highlight">📧 Email</p>
 <p>mybrohud@gmail.com</p>
 <p>Sai Krishna Kandula</p>
 
 <p class="highlight">📞 Phone</p>
-<p>+1 (321)367-6529</p>
+<p>+1 (321) 367-6529</p>
+
+<p class="highlight">📍 Location</p>
+<p>United States (Remote Services)</p>
+
+<p class="highlight">🕒 Business Hours</p>
+<p>Monday - Friday: 9AM - 6PM (EST)</p>
 
 <p class="highlight">⏱ Response Time</p>
 <p>Within 24 business hours</p>
 
-<p style="margin-top:15px">Your information is confidential. No spam, ever.</p>
+<p style="margin-top:20px;">
+We typically respond within a few hours. Your information is 100% secure and confidential.
+</p>
+
 </div>
 
-
-
-
-<a href="index.html">
-    Back</a>
+<div style="text-align:center;">
+<a href="index.html" class="btn">← Back to Home</a>
 </div>
+
+</div>
+
 </body>
 </html>

@@ -6,26 +6,112 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MYBROHUD Agency</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-body{background:#0b0f19;color:#fff}
-header{display:flex;justify-content:space-between;padding:20px 60px;background:#020617;position:sticky;top:0}
-nav a{margin:0 15px;color:#fff;text-decoration:none}
-.btn{background:#6366f1;padding:12px 20px;border-radius:10px;color:#fff;text-decoration:none}
-.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') center/cover}
-.hero h1{font-size:55px;max-width:800px;background:rgba(0,0,0,0.6);padding:20px;border-radius:10px}
-.section{padding:80px 40px;text-align:center}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:40px}
-.card{background:#111827;padding:25px;border-radius:16px;transition:.4s}
-.card:hover{transform:translateY(-10px)}
-img{width:100%;border-radius:12px;margin-top:10px}
-.testimonial{background:#111827;padding:30px;border-radius:16px;margin-top:30px;font-style:italic}
-footer{text-align:center;padding:30px;background:#020617}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif
+}
+
+body{
+  background:#0b0f19;
+  color:#fff
+}
+
+header{
+  display:flex;
+  justify-content:center;
+  padding:20px 60px;
+  background:#020617;
+  position:sticky;
+  top:0
+}
+
+nav a{
+  margin:0 15px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:500
+}
+
+.btn{
+  background:#6366f1;
+  padding:12px 20px;
+  border-radius:10px;
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#4f46e5;
+}
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') center/cover
+}
+
+.hero h1{
+  font-size:55px;
+  max-width:800px;
+  background:rgba(0,0,0,0.6);
+  padding:20px;
+  border-radius:10px
+}
+
+.section{
+  padding:80px 40px;
+  text-align:center
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  margin-top:40px
+}
+
+.card{
+  background:#111827;
+  padding:25px;
+  border-radius:16px;
+  transition:.4s
+}
+
+.card:hover{
+  transform:translateY(-10px)
+}
+
+img{
+  width:100%;
+  border-radius:12px;
+  margin-top:10px
+}
+
+.testimonial{
+  background:#111827;
+  padding:30px;
+  border-radius:16px;
+  margin-top:30px;
+  font-style:italic
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#020617
+}
 </style>
 </head>
 <body>
 <header>
-<h2>MYBROHUD</h2>
 <nav>
 <a href="index.html">Home</a>
 <a href="services.html">Services</a>
